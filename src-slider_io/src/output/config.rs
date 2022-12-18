@@ -14,6 +14,7 @@ pub enum KeyboardLayout {
   Tasoller,
   Yuancon,
   Umiguri,
+  Chunithm,
   TasollerHalf,
   EightK,
   SixK,
@@ -102,6 +103,12 @@ impl OutputMode {
         layout: KeyboardLayout::Umiguri,
         polling: PollingRate::from_str(v["outputPolling"].as_str()?)?,
         sensitivity: u8::try_from(v["keyboardSensitivity"].as_i64()?).ok()?,
+        direct_input: v["keyboardDirectInput"].as_bool()?,
+      },
+      "kb-16-chunithm" => OutputMode::Keyboard{
+        layout: KeyboardLayout::Chunithm,
+        polling: PollingRate::from_str(v["outputPolling"].as_str()?)?,
+        ensitivity: u8::try_from(v["keyboardSensitivity"].as_i64()?).ok()?,
         direct_input: v["keyboardDirectInput"].as_bool()?,
       },
       "kb-16" => OutputMode::Keyboard {

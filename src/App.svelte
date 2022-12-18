@@ -308,6 +308,7 @@
           >
           <option value="kb-32-umiguri">Keyboard 32-zone, UMIGURI Layout</option
           >
+          <option value="kb-16-chunithm">CHUNITHM 16-zone, Brokenithm Layout</option>
           <option value="kb-16">Keyboard 16-zone, Linear</option>
           <option value="kb-8">Keyboard 8-zone, Linear</option>
           <option value="kb-6">Keyboard 6-zone, Linear</option>

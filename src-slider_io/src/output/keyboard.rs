@@ -161,6 +161,7 @@ impl KeyboardOutput {
       KeyboardLayout::Tasoller => &TASOLLER_KB_MAP,
       KeyboardLayout::Yuancon => &YUANCON_KB_MAP,
       KeyboardLayout::Umiguri => &UMIGURI_KB_MAP,
+      KeyboardLayout::Chunithm => &CHUNITHM_BROKE_KB_MAP,
       KeyboardLayout::TasollerHalf => &TASOLLER_HALF_KB_MAP,
       KeyboardLayout::EightK => &EIGHT_K_MAP,
       KeyboardLayout::SixK => &SIX_K_MAP,
